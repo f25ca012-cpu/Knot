@@ -325,7 +325,7 @@ ul {
     text-align: center;
     font-size: 48px;
     max-width: 100%;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .concept-inner {
@@ -841,7 +841,7 @@ main {
 
 
 /*SP対応 (max-width: 767px)*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 768px) {
 
     .page-costume .top-section,
     .page-contact .top-section {
