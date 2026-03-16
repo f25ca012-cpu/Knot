@@ -1199,11 +1199,13 @@ main {
     }
 
     .costumepage .item p {
-    font-size: 13px;
+    /* font-size: 13px;
     line-height: 1.7;
     color: #666;
     padding: 0 16px 20px;
-    text-align: center;
+    text-align: center; */
+    width: 80%;
+    margin: 0 auto;
     }
 
     /* CTA余白調整（このページ用） */
