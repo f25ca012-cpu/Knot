@@ -841,7 +841,7 @@ main {
 
 
 /*SP対応 (max-width: 767px)*/
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 375px) {
 
     .page-costume .top-section,
     .page-contact .top-section {
