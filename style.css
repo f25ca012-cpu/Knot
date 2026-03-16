@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-/* ===================================
-   共通リセット・基本設定
-=================================== */
+/*共通部分*/
 html {
     font-size: 100%;
 }
@@ -33,9 +31,7 @@ ul {
     margin: 0;
 }
 
-/* ===================================
-   ラッパー・グリッド
-=================================== */
+/*ラッパー・グリッド*/
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -60,9 +56,7 @@ ul {
     padding: 0 20px;
 }
 
-/* ===================================
-   ヘッダー
-=================================== */
+/*ヘッダー*/
 .page-header {
     position: fixed;
     top: 0;
@@ -102,17 +96,13 @@ ul {
     color: #89c4ad;
 }
 
-/* ===================================
-   フォント設定
-=================================== */
+/*フォント設定*/
 .font-english {
     font-family: "Bodoni Moda", serif;
     color: #89c4ad;
 }
 
-/* ===================================
-   タイトル・セクション
-=================================== */
+/*タイトル・セクション*/
 .title {
     font-size: 72px;
     font-weight: 500;
@@ -135,9 +125,7 @@ ul {
     padding: 120px 0;
 }
 
-/* ===================================
-   HERO
-=================================== */
+/*HERO*/
 .hero {
     min-height: 100vh;
     display: flex;
@@ -197,9 +185,7 @@ ul {
     100% { opacity: 0; }
 }
 
-/* ===================================
-   NEWS
-=================================== */
+/*NEWS*/
 .news {
     justify-content: center;
     padding: 12px 12px;
@@ -252,9 +238,7 @@ ul {
     height: 200px;
     object-fit: cover;
 }
-/* =========================
-   NEWS詳細ページ
-========================= */
+/*NEWS詳細*/
 
 .news-detail {
   padding-top: var(--header-h, 82px);
@@ -288,7 +272,7 @@ ul {
   color: #7FB39A;
 }
 
-/* 各特典ブロック */
+
 .news-section {
   margin-bottom: 28px;
 }
@@ -323,9 +307,7 @@ ul {
   color: #89c4ad;
 }
 
-/* ===================================
-   CONCEPT
-=================================== */
+/*CONCEPT*/
 .concept {
     position: relative;
     padding: 320px 0;
@@ -359,9 +341,7 @@ ul {
     text-align: center;
 }
 
-/* ===================================
-   PLAN
-=================================== */
+/*PLAN*/
 .plan {
     padding-top: 140px;
     color: #333;
@@ -445,9 +425,7 @@ ul {
     border: 0.5px solid #89c4ad;
     transition: .7s;
 }
-/* =============================
-   メインビジュアル（プラン）
-============================= */
+/*プラン*/
 main > img {
   width: 100%;
   height: 720px;
@@ -483,9 +461,7 @@ main > img {
   margin-left: 5px;
 }
 
-/* =============================
-   アイコン
-============================= */
+/*アイコン*/
 .icon {
   display: flex;
   justify-content: center;
@@ -508,9 +484,7 @@ main > img {
   color: #333;
 }
 
-/* =============================
-   COSTUMEセクション
-============================= */
+/*COSTUMEセクション*/
 .costume {
   padding: 80px 0;
   text-align: center;
@@ -560,9 +534,7 @@ main > img {
     transition: .7s;
 }
 
-/* ===================================
-   COSTUME
-=================================== */
+/*COSTUME*/
 .costume {
     padding-top: 140px;
     color: #333;
@@ -805,9 +777,7 @@ main > img {
     color: #fff;
 }
 
-/* ===================================
-   CONTACT
-=================================== */
+/*CONTACT*/
 .form-group {
     max-width: 800px;
     margin: 0 auto 30px;
@@ -846,17 +816,15 @@ main {
 .page-contact h2.title {
     margin-top: 80px;
 }
-/* =========================
-   お問い合わせCTA
-========================= */
+/* お問い合わせCTA */
 
 .contact-cta {
-  display: block; /* ← flex を無効に */
+  display: block; 
   text-align: center;
   margin-top: 60px;
 }
 
-/* ===== 基本：全ページにヘッダー余白 ===== */
+/* 基本：全ページにヘッダー余白  */
 main {
   padding-top: calc(var(--header-h, 82px) + 40px);
 }
@@ -872,14 +840,12 @@ main {
 
 
 
-/* ===================================
-   SP対応 (max-width: 767px)
-=================================== */
+/*SP対応 (max-width: 767px)*/
 @media screen and (max-width: 767px) {
 
     .page-costume .top-section,
     .page-contact .top-section {
-        padding-top: 80px;
+        /* padding-top: 80px; */
         padding-bottom: 60px;
         min-height: auto;
     }
@@ -894,8 +860,6 @@ main {
         font-size: 0.75rem;
         margin-bottom: 20px;
     }
-
-
 
     body {
         font-size: 14px;
@@ -914,7 +878,7 @@ main {
         gap: 8px;
         font-size: 10px;
     }
-
+    
     .hero {
         min-height: auto;
         height: 60vh;
@@ -991,9 +955,9 @@ main {
         margin-bottom: 24px;
     }
 
-    .plan {
+    /* .plan {
         padding-top: 80px;
-    }
+    } */
 
     .plan .wrapper {
         padding: 0 16px;
@@ -1061,206 +1025,190 @@ main {
     .footer-instagram {
         font-size: 13px;
     }
-    /* =========================
-   共通
-========================= */
-/* body {
-  font-family: "M PLUS Rounded 1c", sans-serif;
-  color: #333;
-  line-height: 1.6;
-  background: #fff;
-} */
+    /* 共通 */
+    /* body {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #fff;
+    } */
 
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+    img {
+    width: 100%;
+    height: auto;
+    display: block;
+    }
 
-/* =========================
-   ヘッダー
-========================= */
-.page-header {
-  padding: 12px 0;
-  border-bottom: 1px solid #eee;
-}
+    /* ヘッダー */
+    .page-header {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    }
 
-.wrapper-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+    .wrapper-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
 
-.logo {
-  width: 110px;
-}
+    .logo {
+    width: 110px;
+    }
 
-/* =========================
-   メインビジュアル
-========================= */
-main > img {
-  width: 100%;
-  height: auto;
-}
+    /*メインビジュアル*/
+    main > img {
+    width: 100%;
+    height: auto;
+    }
 
-/* =========================
-   プランタイトル
-========================= */
-.plan-title {
-  text-align: center;
-  padding: 24px 16px;
-}
+    /*プランタイトル*/
+    .plan-title {
+    text-align: center;
+    padding: 24px 16px;
+    }
 
-.plan-title h3 {
-  font-size: 20px;
-  margin-bottom: 12px;
-}
+    .plan-title h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    }
 
-.plan-title p {
-  font-size: 14px;
-  margin-bottom: 12px;
-}
+    .plan-title p {
+    font-size: 14px;
+    margin-bottom: 12px;
+    }
 
-.price {
-  font-size: 26px;
-  font-weight: bold;
-  margin-top: 8px;
-}
+    .price {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 8px;
+    }
 
-.tax {
-  font-size: 12px;
-  margin-left: 4px;
-}
+    .tax {
+    font-size: 12px;
+    margin-left: 4px;
+    }
 
-/* =========================
-   アイコン
-========================= */
-.icon {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  padding: 24px 16px;
-  text-align: center;
-}
+    /*アイコン*/
+    .icon {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 24px 16px;
+    text-align: center;
+    }
 
-.icon img {
-  width: 48px;
-  margin: 0 auto 6px;
-}
+    .icon img {
+    width: 48px;
+    margin: 0 auto 6px;
+    }
 
-.icon figcaption {
-  font-size: 12px;
-}
+    .icon figcaption {
+    font-size: 12px;
+    }
 
-/* =========================
-   衣装セクション
-========================= */
-.costume {
-  padding: 40px 0;
-}
+    /*衣装セクション*/
+    .costume {
+    padding: 40px 0;
+    }
 
-.title {
-  text-align: center;
-  font-size: 22px;
-  margin-bottom: 4px;
-}
+    .title {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 4px;
+    }
 
-.section-label {
-  text-align: center;
-  font-size: 13px;
-  color: #888;
-  margin-bottom: 20px;
-}
+    .section-label {
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 20px;
+    }
 
-/* スクロールバー非表示（スマホ） */
-.costume-list::-webkit-scrollbar {
-  display: none;
-}
+    /* スクロールバー非表示（スマホ） */
+    .costume-list::-webkit-scrollbar {
+    display: none;
+    }
 
-/* Moreリンク */
-.more-link {
-  display: block;
-  text-align: center;
-  margin-top: 16px;
-  font-size: 14px;
-}
+    /* Moreリンク */
+    .more-link {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 14px;
+    }
 
-/* =========================
-   CTA
-========================= */
-.contact-cta {
-  padding: 40px 16px 60px;
-}
+    /*CTA*/
+    .contact-cta {
+    padding: 40px 16px 60px;
+    }
 
-.cta-button {
-  display: block;
-  text-align: center;
-  background: #89c4ad;
-  color: #fff;
-  padding: 16px;
-  border-radius: 999px;
-  font-size: 16px;
-  text-decoration: none;
-}
-/* =========================
-   COSTUMEページ（スマホ）
-========================= */
+    .cta-button {
+    display: block;
+    width: 220px;
+    margin: 0 auto;
+    padding: 16px 20px;
+    font-size: 14px;
+    text-align: center;
+    background: #89c4ad;
+    color: #fff;
+  }
+    /*COSTUMEページ（スマホ）*/
 
-.page-costume main {
-  padding-bottom: 40px;
-}
+    .page-costume main {
+    padding-bottom: 40px;
+    }
 
-/* セクション余白 */
-.costumepage {
-  padding: 32px 0 24px;
-}
+    /* セクション余白 */
+    /* .costumepage {
+    padding: 32px 0 24px;
+    } */
 
-/* カード一覧（縦並び） */
-.costumepage-list {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
+    /* カード一覧（縦並び） */
+    .costumepage-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    }
 
-/* リンク全体をカード化 */
-.item-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
+    /* リンク全体をカード化 */
+    .item-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    }
 
-/* カードデザイン */
-.costumepage .item {
-  background: #fff;
-  border-radius: 16px;
-  overflow: hidden;
-}
+    /* カードデザイン */
+    .costumepage .item {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    }
 
-/* 画像 */
-.costumepage .item img {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-}
+    /* 画像 */
+    .costumepage .item img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    }
 
-/* テキスト部分 */
-.costumepage .item h3 {
-  font-size: 18px;
-  text-align: center;
-  margin: 16px 12px 8px;
-}
+    /* テキスト部分 */
+    .costumepage .item h3 {
+    font-size: 18px;
+    text-align: center;
+    margin: 16px 12px 8px;
+    }
 
-.costumepage .item p {
-  font-size: 13px;
-  line-height: 1.7;
-  color: #666;
-  padding: 0 16px 20px;
-  text-align: center;
-}
+    .costumepage .item p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #666;
+    padding: 0 16px 20px;
+    text-align: center;
+    }
 
-/* CTA余白調整（このページ用） */
-.page-costume .contact-cta {
-  padding: 32px 16px 56px;
-}
+    /* CTA余白調整（このページ用） */
+    .page-costume .contact-cta {
+    padding: 32px 16px 56px;
+    }
 
 }
